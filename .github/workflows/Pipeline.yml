@@ -24,6 +24,8 @@ jobs:
       run: cd HelloWorld
     - name: Grant execute permission for gradlew
       run: chmod +x gradlew
+      working-directory: HelloWorld
+
     - name: Build with Gradle
       run: ./gradlew build
-
+      working-directory: HelloWorld
